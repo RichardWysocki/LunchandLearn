@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[LogInformation](
+	[LogId] [int] IDENTITY(1,1) NOT NULL,
+[Product] [varchar](100) NULL,
+	[Type] [varchar](50) NULL,
+	[Class] [varchar](50) NULL,
+	[Method] [varchar](50) NULL,
+	[Message] [varchar](4000) NULL,
+	[Source] [varchar](4000) NULL
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[AutomatedEmails](
+	[EmailId] [int] IDENTITY(1,1) NOT NULL,
+	[ToAddress] [varchar](100) NULL,
+	[Name] [varchar](50) NULL,
+	[Subject] [varchar](50) NULL,
+	[Body] [varchar](4000) NULL,
+	[EmailSent] [bit] NULL
+) ON [PRIMARY]
+
+GO
