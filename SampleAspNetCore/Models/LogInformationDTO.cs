@@ -1,24 +1,19 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
-namespace SampleClassLibrary.NetStandard.Model
+namespace SampleAspNetCore.Models
 {
-    /// <summary>
-    /// LogInformation Table
-    /// </summary>
-    public class LogInformation
+    public class LogInformationDTO
     {
         /// <summary>
         /// LogId
         /// </summary>
-        [Key]
         public int LogId { get; set; }
 
         /// <summary>
         /// Product: Set Application that is sending this information over
         /// </summary>
         public String Product { get; set; }
-        
+
         /// <summary>
         /// Log Type:  Informational, Error
         /// </summary>
@@ -28,16 +23,17 @@ namespace SampleClassLibrary.NetStandard.Model
         /// Log Class Name
         /// </summary>
         public string Class { get; set; }
+
         /// <summary>
         /// Log Method Name
         /// </summary>
         public string Method { get; set; }
-        
+
         /// <summary>
         /// Log Method Name
         /// </summary>
         public string Message { get; set; }
-        
+
         /// <summary>
         /// Log Source
         /// </summary>
