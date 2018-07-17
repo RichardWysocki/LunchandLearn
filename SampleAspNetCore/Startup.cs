@@ -25,6 +25,9 @@ namespace SampleAspNetCore
             services.AddTransient<IDBContext, DBContext>();
             services.AddTransient<ILogInformationDataAccess, LogInformationDataAccess>();
 
+            services.AddTransient<IEmailDataAccess, EmailDataAccess>();
+            
+
             services.AddMvc();
             services.AddAutoMapper();
 
